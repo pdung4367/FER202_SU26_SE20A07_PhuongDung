@@ -2,23 +2,31 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  // khai bao ham chao1 
+  // ten do o console
+  let chao1 = (name) => console.log(`Xin chao, ${name}!`);
+  let person = {
+    id: 1,
+    name: "Bob",
+    age: 30,
+    address: "123 HT"
+};
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <h1> Xin chao, day la btv ham trong React</h1>
+    <h2> toi la Phdum</h2>
+    <button onClick={ () => chao1("Phdum")}>Goi ham chao</button>
+    <div className="card">
+       <h3> Thong tin Person: </h3>
+      <p> ID: {person.id}</p> 
+      <p> Name: {person.name}</p> 
+      <p> Age: {person.age}</p> 
+      <p> Address: {person.address}</p> 
     </div>
+     
+     </>
+
+  
   );
 }
 
