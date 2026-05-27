@@ -18,6 +18,7 @@ function AppNavbar() {
             <Nav.Link as={NavLink} to='/'      end>🏠 Trang chủ</Nav.Link>
             <Nav.Link as={NavLink} to='/posts'    >📚 Bài viết</Nav.Link>
             <Nav.Link as={NavLink} to='/about'    >ℹ️ Giới thiệu</Nav.Link>
+            <Nav.Link as={NavLink} to='/register' >📝 Đăng ký</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
